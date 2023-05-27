@@ -1,0 +1,13 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: fortio
+  namespace: supp
+  labels:
+    app: fortio
+spec:
+  ports:
+  - port: 8080
+  selector:
+    app: fortio

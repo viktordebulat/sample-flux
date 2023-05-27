@@ -1,0 +1,11 @@
+---
+# this configuration extends preset config named "relaxed", more: https://yamllint.readthedocs.io/en/stable/configuration.html#default-configuration
+extends: relaxed
+
+rules:
+  indentation:
+    spaces: 2
+    indent-sequences: false
+    check-multi-line-strings: false
+  line-length:
+    max: 200

@@ -1,0 +1,32 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fortio
+  namespace: supp
+spec:
+  selector:
+    matchLabels:
+      app: fortio
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: fortio
+    spec:
+      containers:
+      - name: fortio
+        image: fortio/fortio:latest_release
+        imagePullPolicy: Always
+        args: ["server"]
+        resources:
+          limits:
+            memory: "500Mi"
+          requests:
+            memory: "100Mi"
+            cpu: "5m"
+        ports:
+        - containerPort: 8080
+          name: http-fortio
+        - containerPort: 8079
+          name: grpc-ping
