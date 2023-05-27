@@ -9,13 +9,11 @@ This is a demo cluster infrastructure, which is using Flux CD to follow Gitops a
 ├── README.md
 ├── apps                     # Project apps manifests
 ├── apps-dev                 # Development project apps manifests 
-│   └── podinfo                 # Simole Go application
 ├── flux-system              # Flux control manifests
 |   ├── namespaces              # Namespaces
 |   └── helmrepos               # Helm Repositories definitions
-├── supp                     # Supplementary applications
-|   ├── fortio                  # Another app for load tests with GUI
-|   └── k6-operator-system      # K6 operator for load tests
+├── kube-system              # Kube-system apps manifests
+└── supp                     # Supplementary applications
 ```
 
 
@@ -37,4 +35,3 @@ export GITHUB_TOKEN=<my-token>
 
 flux bootstrap github --owner=<user> --repository=<repository name> --private=false --personal=true --path=cluster
 ```
-
