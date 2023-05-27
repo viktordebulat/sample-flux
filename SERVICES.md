@@ -2,10 +2,6 @@
 # Supplementary Services
 
 - [Misc](#misc)
-  - [CI/CD Apps](#cicd-apps)
-    - [SonarQube](#sonarqube)
-  - [Database](#database)
-    - [pgAdmin4](#pgadmin4)
   - [Load Testing](#load-testing)
     - [Fortio](#fortio)
     - [K6 Operator](#k6-operator)
