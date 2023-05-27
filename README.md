@@ -7,13 +7,15 @@ This is a demo cluster infrastructure, which is using Flux CD to follow Gitops a
 ```
 .
 ├── README.md
-├── apps                     # Project apps manifests
-├── apps-dev                 # Development project apps manifests 
-├── flux-system              # Flux control manifests
-|   ├── namespaces              # Namespaces
-|   └── helmrepos               # Helm Repositories definitions
-├── kube-system              # Kube-system apps manifests
-└── supp                     # Supplementary applications
+├── SERVICES.md
+├── cluster
+|   ├── apps                     # Project apps manifests
+|   ├── apps-dev                 # Development project apps manifests 
+|   ├── flux-system              # Flux control manifests
+|   ├── helmrepos                # Helm Repositories definitions
+|   ├── kube-system              # Kube-system apps manifests
+|   ├── namespaces               # Namespaces
+|   └── supp                     # Supplementary applications
 ```
 
 
